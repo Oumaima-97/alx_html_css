@@ -1,27 +1,42 @@
+/* General styles (for desktop or larger screens) */
 body {
     display: flex;
-    flex-direction: column;      /* Stack header, main, and footer vertically */
-    height: 100vh;               /* Full viewport height */
-    margin: 0;                   /* Remove default margin */
-}
-
-header, footer {
-    padding: 10px;               /* Optional padding */
-    background-color: #f1f1f1;   /* Optional background color */
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 
 main {
-    display: flex;               /* Arrange article and aside horizontally */
+    display: flex;
     flex-direction: row;
-    flex: auto;                  /* Automatic height and width */
+    flex: auto;
 }
 
 article {
-    flex: 2;                     /* Take up 2 parts of available space */
-    overflow-y: auto;            /* Enable vertical scrolling */
+    flex: 2;
+    overflow-y: auto;
 }
 
 aside {
-    flex: 1;                     /* Take up 1 part of available space */
-    overflow-y: auto;            /* Enable vertical scrolling */
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Styles for mobile (smartphones) */
+@media (max-width: 768px) {
+    body.works_on_smartphone {
+        flex-direction: column;  /* Stack the content vertically */
+    }
+
+    main {
+        flex-direction: column;  /* Stack article and aside vertically */
+    }
+
+    article {
+        flex: auto;  /* Let article take full width */
+    }
+
+    aside {
+        flex: auto;  /* Let aside take full width */
+    }
 }
