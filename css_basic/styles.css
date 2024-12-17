@@ -1,27 +1,38 @@
-/* General styles (for desktop or larger screens) */
+/* Apply Flexbox to the <body> tag */
 body {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
+    flex-direction: column;      /* Stack header, main, and footer vertically */
+    height: 100vh;               /* Full viewport height */
+    margin: 0;                   /* Remove default margin */
+    background-color: #f4f4f4;   /* Light grey background */
+    font-family: Arial, sans-serif; /* Change font family */
 }
 
+/* Styling for <header> and <footer> */
+header, footer {
+    padding: 10px;               /* Optional padding */
+    background-color: #f1f1f1;   /* Optional background color */
+}
+
+/* Apply Flexbox to the <main> tag */
 main {
-    display: flex;
+    display: flex;               /* Arrange article and aside horizontally */
     flex-direction: row;
-    flex: auto;
+    flex: auto;                  /* Automatic height and width */
 }
 
+/* Flex properties for <article> */
 article {
-    flex: 2;
-    overflow-y: auto;
+    flex: 2;                     /* Take up 2 parts of available space */
+    overflow-y: auto;            /* Enable vertical scrolling */
 }
 
+/* Flex properties for <aside> */
 aside {
-    flex: 1;
-    overflow-y: auto;
-}
+    flex: 1;                     /* Take up 1 part of available space */
+    overflow-y: auto;            /* Enable vertical scrolling */
 
+}
 /* Styles for mobile (smartphones) */
 @media (max-width: 768px) {
     body.works_on_smartphone {
@@ -40,3 +51,58 @@ aside {
         flex: auto;  /* Let aside take full width */
     }
 }
+/* Style the header */
+header {
+    background-color: #333;  /* Dark background for header */
+    color: white;            /* White text */
+    padding: 20px;
+    text-align: center;      /* Center text */
+}
+
+/* Add some styling to the navigation list in header */
+header ul {
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block; /* Arrange list items horizontally */
+    margin: 0 10px;        /* Space out items */
+}
+
+header ul li a {
+    color: white;          /* White text for links */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 18px;
+}
+
+/* Style for the article section */
+article {
+    padding: 20px;
+    background-color: #fff; /* White background for article */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Add some padding to the aside */
+aside {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background */
+    border-left: 2px solid #ddd; /* Border on the left */
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;  /* Dark background */
+    color: white;            /* White text */
+    text-align: center;
+    padding: 10px;
+}
+/* Style the logo */
+.logo {
+    font-size: 36px;       /* Increase the size of the logo */
+    color: #FFD700;        /* Gold color for the logo */
+    margin-right: 15px;    /* Space between the logo and the navigation items */
+    vertical-align: middle; /* Align vertically with the navigation items */
+}
+
