@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;      /* Stack header, main, and footer vertically */
+    height: 100vh;               /* Full viewport height */
+    margin: 0;                   /* Remove default margin */
+}
+
+header, footer {
+    padding: 10px;               /* Optional padding */
+    background-color: #f1f1f1;   /* Optional background color */
+}
+
+main {
+    display: flex;               /* Arrange article and aside horizontally */
+    flex-direction: row;
+    flex: auto;                  /* Automatic height and width */
+}
+
+article {
+    flex: 2;                     /* Take up 2 parts of available space */
+    overflow-y: auto;            /* Enable vertical scrolling */
+}
+
+aside {
+    flex: 1;                     /* Take up 1 part of available space */
+    overflow-y: auto;            /* Enable vertical scrolling */
+}
