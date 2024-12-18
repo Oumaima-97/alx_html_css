@@ -3,6 +3,24 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+/* General Typography Styles (if applicable across multiple sections) */
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif; /* Global font */
+    line-height: 1.5;
+    color: #333; /* Default text color */
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -71,5 +89,31 @@ nav a:hover {
 
 .banner button:hover {
     background-color: #0056b3; /* Darker shade for hover effect */
+}
+/* General Reset for Blockquote */
+blockquote {
+    font-style: italic;
+    font-size: 24px; /* Adjust as per Figma design */
+    line-height: 1.6;
+    text-align: center;
+    margin: 40px auto; /* Centering the quote with margin */
+    padding: 20px;
+    border-left: 5px solid #007bff; /* Add a left border for style (if required by Figma) */
+    max-width: 80%; /* Control width */
+}
+
+/* Footer (author or source) styling */
+blockquote footer {
+    font-size: 18px; /* Smaller text for author */
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555; /* Adjust to Figma text color */
+}
+
+/* Optionally, style the section around the quote */
+.quote {
+    background-color: #f4f4f4; /* Light background for the quote section */
+    padding: 60px 20px;
+    text-align: center;
 }
 
