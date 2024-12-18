@@ -116,4 +116,71 @@ blockquote footer {
     padding: 60px 20px;
     text-align: center;
 }
+/* Videos List Section */
+.videos-list {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Background color */
+}
+
+.videos-list h2 {
+    font-size: 36px; /* Adjust according to Figma design */
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Video Items */
+.videos-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between video items */
+}
+
+/* Styling for Each Video Item */
+.video-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.video-item img {
+    width: 100%; /* Make sure the image fits */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.video-item h3 {
+    font-size: 24px; /* Adjust with Figma font size */
+    margin-top: 20px;
+}
+
+.video-item p {
+    font-size: 16px; /* Adjust with Figma font size */
+    color: #555; /* Text color */
+    margin: 10px 0;
+}
+
+/* Watch Video Button Styling */
+.watch-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.watch-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
 
