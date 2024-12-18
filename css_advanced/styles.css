@@ -3,4 +3,73 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Update with Figma background color */
+}
+
+.logo {
+    height: 50px; /* Adjust based on logo size from Figma */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Update with Figma text color */
+    font-size: 16px; /* Update with Figma font size */
+    font-weight: 600; /* Update with Figma font weight */
+}
+
+nav a:hover {
+    color: #007bff; /* Highlight color for hover state */
+}
+
+/* Banner Section Styling */
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/banner.jpg') no-repeat center center/cover; /* Replace with the Figma banner image */
+    color: #fff; /* Text color */
+}
+
+.banner h1 {
+    font-size: 48px; /* Update with Figma font size */
+    font-weight: bold; /* Update with Figma font weight */
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px; /* Update with Figma font size */
+    margin-bottom: 30px;
+}
+
+.banner button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners if applicable */
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
 
