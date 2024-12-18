@@ -264,5 +264,57 @@ blockquote footer {
     border: 2px solid #007bff; /* Highlighted border for featured plan */
     background-color: #f0f8ff; /* Light blue background for featured plan */
 }
+/* FAQ Section */
+.faq {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Light border between FAQ items */
+}
+
+/* Question Button Styling */
+.faq-question {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #0056b3;
+}
+
+/* Answer Content */
+.faq-answer {
+    display: none; /* Hidden by default */
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Active Answer (visible when clicked) */
+.faq-item.active .faq-answer {
+    display: block;
+}
 
 
