@@ -1,0 +1,576 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+}
+
+/* Header styling */
+/* Header background image */
+header {
+background-image: url("Object.png");
+background-repeat: no-repeat; /* Prevent the image from repeating */
+background-size: cover; /* Make the image cover the entire header */
+background-position: center center; /* Ensure the image is centered */
+display:flex;
+justify-content:center;
+padding:0;
+align-items: center;
+height: 100vh;
+}
+
+/* Navbar styling */
+
+nav ul{
+  list-style: none;
+  display:flex;
+  gap: 30px;
+ 
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Update with Figma text color */
+  font-size: 12px; /* Update with Figma font size */
+  font-weight: 700; /* Update with Figma font weight */
+  line-height: 15px;
+  
+}
+
+nav a:hover {
+  color: #98a6b5; /* Highlight color for hover state */
+}
+
+/* Logo styling */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  position: absolute; 
+  top: 0; 
+  left: 200PX; 
+
+}
+
+.nav-logo img {
+  height: 50px; /* Adjust size based on design */
+  width: 100px;
+  padding: 10px ;
+  padding: 10px 20px;
+  padding-top: 20PX;
+}
+
+.navbar {
+  position: absolute; /* absolute the navbar */
+  top: 0; /* Aligns it to the top */
+  right: 200PX; /* Aligns it to the right */
+  width: 200px; /* Width of the navbar */
+  height: 100%; /* Full height for a vertical menu */
+  color: white;
+  z-index: 1000; /* Ensures it stays above other elements */
+  padding: 20px 10px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column; /* Stacks links vertically */
+  align-items: flex-start; /* Align links to the left inside the navbar */
+}
+
+/* Flex-container for header text */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* h1 Styling */
+h1 {
+  font-size: 120px;
+  line-height: 150px;
+  color: whitesmoke;
+  text-align: center; /* Center the text inside h1 */
+  margin-top:0; /* Add some space below the h1 */
+  margin-bottom: 10px;
+}
+
+/* .para Styling - Center h4 elements */
+.para {
+  display: flex; /* Arrange h4 elements in a row */
+  justify-content: center; /* Center the h4 elements */
+  gap: 30px; /* Add space between h4 elements */
+  margin-top: 10px; /* Space between h1 and h4 elements */
+}
+
+/* h4 Styling */
+.para h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center; /* Center text horizontally */
+  margin: 0;
+}
+
+.cta_button{
+    background-color:mediumorchid; /* Adjust as needed */
+    color: white;
+    padding: 15px 30px; /* Adjust size */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; /* Space between the h4 and button */
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+.cta-button:hover {
+  background-color: #c44226; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge */
+}
+/* General h2 Styling */
+/* General styling for h2 */
+/* General styling for h2 */
+h2 {
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+color: white;
+margin-top: 20px;
+margin-bottom: 30px; /* Space between h2 and profiles */
+}
+
+/* Styling for the highlighted text in h2 */
+.highlight {
+color: mediumorchid;
+}
+
+/* Profile container styling */
+.profile-container {
+display: flex; /* Use flexbox for horizontal alignment */
+justify-content: center; /* Center the profiles horizontally */
+align-items: center; /* Align items vertically */
+gap: 20px; /* Space between the profiles */
+flex-wrap: nowrap; /* Prevent wrapping */
+margin-top: 20px;
+overflow-x: auto; /* Allow horizontal scrolling if the container is too small */
+}
+
+/* Individual profile styling */
+.profile {
+display: flex;
+flex-direction: column; /* Stack the image, name, and description */
+align-items: center; /* Center elements within each profile */
+text-align: center; /* Center text */
+width: 150px; /* Fixed width for profiles */
+}
+
+/* Circular image styling */
+.profile img {
+width: 100px;
+height: 100px;
+border-radius: 50%; /* Make the image circular */
+object-fit: cover; /* Ensure the image fits inside the circle */
+border: 2px solid white; /* Optional border for emphasis */
+margin-bottom: 10px; /* Space below the image */
+}
+
+/* Name styling */
+.profile h3 {
+font-size: 16px;
+font-weight: bold;
+color: white;
+margin-bottom: 5px; /* Space below the name */
+}
+
+/* Description styling */
+.profile p {
+font-size: 14px;
+color: #d3d3d3; /* Light gray for description */
+margin: 0;
+}
+
+/* Ensure everything stays in the middle of the page */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center; /* Center items vertically on the page */
+  min-height: 100vh; /* Full-page height */
+}
+
+
+/* Styling for the Quote Section */
+.quote-section {
+  background-color: #C271FF; /* Background color for the section */
+  width: 100%; /* Center the section and limit its width */
+  display: flex;
+  padding: 100px;
+  padding-right: 60px;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Align items vertically */
+  text-align: left; /* Ensure text aligns properly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styling the Container Inside the Quote Section */
+.quote-container {
+  display: flex; /* Flex container for image and text */
+  align-items: center; /* Center align image and text vertically */
+  gap: 20px; /* Space between the image and the text */
+}
+
+/* Styling for the Circular Image */
+.quote-image img {
+  width: 100px; /* Size of the circular image */
+  height: 100px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image scales well */
+  border: 3px solid white; /* Add a border around the image */
+}
+
+/* Styling for the Quote Text */
+.quote-section blockquote {
+  font-size: 18px; /* Size of the quote text */
+  color: white; /* White text color */
+  font-style: italic; /* Italicized text */
+  margin: 0; /* Remove default margins */
+  line-height: 1.6; /* Adjust line spacing */
+}
+
+/* Styling for the Person's Name */
+.quote-section blockquote h4 {
+  font-size: 20px; /* Adjust size of the name */
+  color: white; /* Text color for the name */
+  font-weight: bold; /* Make the name stand out */
+}
+
+/* Styling for the Footer Text */
+.quote-section blockquote footer {
+  margin-top: 5px; /* Space above the footer */
+  font-size: 16px; /* Adjust size for the footer */
+  color: #fff; /* White text for consistency */
+}
+/* Video List Section */
+.videos-list {
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.videos-list h2 {
+  font-size: 28px;
+  color: black; /* Default color for the title */
+  margin-bottom: 30px;
+}
+
+.videos-list h2 .h2-items {
+  color: #C271FF; /* Change "popular" color */
+}
+
+/* Container for Video Items */
+.videos-container {
+  display: flex;
+  justify-content: space-between; /* Spread the video items horizontally */
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Individual Video Item */
+.video-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px; /* Adjust width as necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+/* Container for Video Thumbnail */
+.vd-thum-container {
+  position: relative;
+  width: 100%;
+  height: 140px; /* Fixed height for the thumbnail */
+  margin-bottom: 15px;
+}
+
+/* Play Icon - positioned above the Thumbnail */
+.play-icon {
+  position: absolute;
+  top: 20px; /* Adjust to position above the thumbnail */
+  left: 50%;
+  transform: translateX(-50%); /* Center the icon */
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+}
+
+/* Video Thumbnail */
+.vd-thum {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Video Title */
+.video-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Video Description */
+.video-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Video Footer (Person, Rating, and Time) */
+.video-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align the elements */
+  gap: 1px; /* Space between images and time */
+}
+
+.video-footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.video-footer p{
+  padding-right: 80px;
+}
+
+/* Video Footer (Person, Rating, and Time) */
+.video-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align the elements */
+  gap: 10px; /* Space between images and time */
+}
+
+.video-foot img {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  top: 305px;
+  left: 59px;
+
+}
+
+/* Time and Rating */
+.time {
+  color: #C271FF; /* Color for "8 min" */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .videos-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .video-item {
+      width: 90%;
+  }
+}
+
+/* Style for the section background */
+.members {
+  background-color: #071629; /* Background color */
+  padding: 50px 20px; /* Add padding for spacing */
+  text-align: center; /* Center align the content */
+  color: white; /* Default text color */
+}
+
+/* Style for the heading and span */
+.members h2 {
+  font-size: 2.5rem; /* Adjust size for prominence */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.members h2 .fr {
+  color: #C271FF; /* Span color for 'Free' */
+}
+
+/* Style for the membership container */
+.members .membership {
+  display: flex; /* Align the 4 divs in one line */
+  justify-content: space-around; /* Distribute space evenly */
+  gap: 20px; /* Add space between the divs */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Style for each membership box */
+.members .membership div {
+  background-color: #071629; /* Slightly darker background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  text-align: center;
+  width: 20%; /* Width for each box */
+  min-width: 200px; /* Minimum width to ensure responsiveness */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.members .membership img {
+  width: 50px; /* Adjust image size */
+  height: 50px; /* Ensure consistent dimensions */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.members .membership h4 {
+  color:white; /* Title color */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.members .membership p {
+  font-size: 1rem; /* Font size for the text */
+  line-height: 1.5; /* Improve readability */
+  color: white; /* Text color */
+}
+
+/* Style for the button */
+.members button {
+  background-color: #C271FF; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 15px 30px; /* Add padding for a clickable button */
+  border-radius: 22px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 80px; /* Space above the button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+
+.members button:hover {
+  background-color: #a653cc; /* Darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .members .membership {
+      flex-direction: column; /* Stack boxes vertically */
+  }
+
+  .members .membership div {
+      width: 100%; /* Full width for each box */
+  }
+}
+
+
+/* FAQ Section General Styles */
+.faq {
+  background-color:white; /* Light background */
+  padding: 50px 20px; /* Spacing around the section */
+  color: #333; /* Default text color */
+  font-family: Arial, sans-serif; /* Example font */
+  text-align: center; /* Center-align the section */
+}
+
+/* Center and Style the H2 */
+.faq h2 {
+  font-size: 2rem; /* Adjust heading size */
+  color: #000; /* Black color for heading */
+  margin-bottom: 50px; /* Space below the heading */
+}
+
+/* FAQ Container */
+.faq-container {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 20px; /* Spacing between grid items */
+  justify-items: center; /* Center items horizontally */
+  align-items: start; /* Align items at the top */
+}
+
+/* Individual FAQ Work Styles */
+.faq-work {
+  background-color:#fff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Add padding inside each box */
+  width: 90%; /* Adjust width for better spacing */
+  text-align: left; /* Align text to the left */
+}
+
+/* FAQ Work Heading */
+.faq-work h3 {
+  font-size: 1.5rem; /* Adjust heading size */
+  color: #071629; /* Accent color for heading */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+/* FAQ Work Paragraph */
+.faq-work p {
+  font-size: 1rem; /* Adjust text size */
+  line-height: 1.6; /* Increase readability */
+  color: #555; /* Subtle color for body text */
+}
+
+
+/* General Footer Styles */
+.site-footer {
+  background-color: #071629; /* Dark blue background */
+  color: #ffffff; /* White text */
+  padding: 20px 40px; /* Padding around content */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Push items to edges */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Use full width */
+  max-width: 1200px; /* Limit container width */
+  margin-bottom: 30px; /* Space between container and credits */
+}
+
+/* Footer Logo */
+.footer-logo img {
+  width: 150px; /* Adjust logo size */
+}
+
+/* Footer Socials */
+.footer-socials img {
+  width: 40px; /* Adjust icon size */
+  height: 40px;
+  border-radius: 40px;
+  gap:20px;
+}
+
+/* Footer Credit */
+.footer-credit {
+  text-align: center;
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #bbbbbb; /* Subtle text color */
+}
+
+
